@@ -1,0 +1,80 @@
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+noscript header {
+  border: 1px solid red;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+main {
+  position: relative;
+}
+
+#fibonacci-canvas {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#fibonacci-footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 1rem;
+  width: 100%;
+}
+
+#fibonacci-controls {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s linear;
+  justify-content: center;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.button-divider {
+  border: 1px solid black;
+  margin: 0.25rem 0.5rem;
+}
+
+#fibonacci-controls.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.icon-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.icon-button .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+}

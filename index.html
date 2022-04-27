@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Michael Barlow" />
+    <meta name="description" content="Renders the time in a Fibonacci format" />
+
+    <title>Fibonacci Clock</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <header>
+        <span>Please enable JavaScript to view this site in full.</span>
+      </header>
+    </noscript>
+    <main>
+      <canvas id="fibonacci-canvas"></canvas>
+      <div id="fibonacci-footer">
+        <div id="fibonacci-controls">
+          <button
+            class="icon-button"
+            id="constrain-button"
+            title="Constrain aspect ratio"
+          >
+            <img class="icon" src="icons/lock-closed.svg" />
+          </button>
+          <button
+            class="icon-button"
+            id="unconstrain-button"
+            title="Unconstrain aspect ratio"
+          >
+            <img class="icon" src="icons/lock-open.svg" />
+          </button>
+          <div class="button-divider"></div>
+          <button
+            class="icon-button"
+            id="show-minutes-button"
+            title="Show minute circles"
+          >
+            <img class="icon" src="icons/circle-solid.svg" />
+          </button>
+          <button
+            class="icon-button"
+            id="hide-minutes-button"
+            title="Hide minute circles"
+          >
+            <img class="icon" src="icons/circle-empty.svg" />
+          </button>
+          <div class="button-divider"></div>
+          <button
+            class="icon-button"
+            id="show-numbers-button"
+            title="Show helper numbers"
+          >
+            <img class="icon" src="icons/square-number.svg" />
+          </button>
+          <button
+            class="icon-button"
+            id="hide-numbers-button"
+            title="Hide helper numbers"
+          >
+            <img class="icon" src="icons/square-empty.svg" />
+          </button>
+          <div class="button-divider"></div>
+          <button class="icon-button" id="help-button" title="Help">
+            <img class="icon" src="icons/question.svg" />
+          </button>
+          <a
+            class="icon-button"
+            href="https://github.com/Michael-JB/fibonacci-clock"
+          >
+            <img class="icon" src="icons/github.svg" />
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
