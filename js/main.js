@@ -107,6 +107,7 @@ const drawFibSite = (site, fibUnitSize, fibOffset, colour, circle, number) => {
 
 const encodeTimeAsFib = (date) => {
   const hour = date.getHours() % 12;
+  const hour12 = hour === 0 ? 12 : hour;
   const minute = Math.floor(date.getMinutes() / 5);
   const minuteRemainder = date.getMinutes() % 5;
 
@@ -123,7 +124,7 @@ const encodeTimeAsFib = (date) => {
       }, []);
   };
 
-  const hourSites = encodeAsFib(hour);
+  const hourSites = encodeAsFib(hour12);
   const minuteSites = encodeAsFib(minute);
   const minuteRemainderSites = encodeAsFib(minuteRemainder);
   return { hourSites, minuteSites, minuteRemainderSites };
